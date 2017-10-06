@@ -43,7 +43,7 @@ class StatusAwareTraitTest extends TestCase
 
         $mock->method('__')->willReturnArgument(0);
         $mock->method('_createInvalidArgumentException')->willReturnCallback(
-            function($msg = '', $code = null, $prev = null) {
+            function ($msg = '', $code = null, $prev = null) {
                 return new InvalidArgumentException($msg, $code, $prev);
             }
         );
