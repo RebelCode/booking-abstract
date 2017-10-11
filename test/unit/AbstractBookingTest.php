@@ -3,8 +3,8 @@
 namespace RebelCode\Bookings\UnitTest;
 
 use PHPUnit_Framework_MockObject_MockObject;
-use RebelCode\Time\PeriodInterface;
-use RebelCode\Time\TimeInterface;
+use Dhii\Time\PeriodInterface;
+use Dhii\Time\TimeInterface;
 use Xpmock\TestCase;
 
 /**
@@ -52,7 +52,7 @@ class AbstractBookingTest extends TestCase
      */
     public function createPeriod($start = null, $end = null, $duration = null)
     {
-        return $this->mock('RebelCode\Time\PeriodInterface')
+        return $this->mock('Dhii\Time\PeriodInterface')
                     ->getStart($start)
                     ->getEnd($end)
                     ->getDuration($duration)
@@ -70,7 +70,7 @@ class AbstractBookingTest extends TestCase
      */
     public function createTime($timestamp)
     {
-        return $this->mock('RebelCode\Time\TimeInterface')
+        return $this->mock('Dhii\Time\TimeInterface')
                     ->getTimestamp($timestamp)
                     ->new();
     }

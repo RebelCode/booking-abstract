@@ -2,8 +2,8 @@
 
 namespace RebelCode\Bookings;
 
-use RebelCode\Time\PeriodInterface;
-use RebelCode\Time\TimeInterface;
+use Dhii\Time\PeriodInterface;
+use Dhii\Time\TimeInterface;
 
 /**
  * Abstract common functionality for bookings.
