@@ -27,7 +27,7 @@ trait StatusAwareTrait
      *
      * @since [*next-version*]
      *
-     * @return Stringable|string The status.
+     * @return string|Stringable The status.
      */
     protected function _getStatus()
     {
