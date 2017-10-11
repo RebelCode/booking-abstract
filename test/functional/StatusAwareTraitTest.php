@@ -6,10 +6,9 @@ use InvalidArgumentException;
 use PHPUnit_Framework_MockObject_MockObject;
 use stdClass;
 use Xpmock\TestCase;
-use RebelCode\Bookings\StatusAwareTrait as TestSubject;
 
 /**
- * Tests {@see TestSubject}.
+ * Tests {@see RebelCode\Bookings\StatusAwareTrait}.
  *
  * @since [*next-version*]
  */
