@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "881cdee7b0da9abfb45c6b3b2b721138",
+    "content-hash": "ef91064cc0d4e8a463d849a14d2346ee",
     "packages": [
         {
             "name": "rebelcode/time-abstract",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/RebelCode/time-abstract.git",
-                "reference": "808681d1620e15170ba05c912096a236719fe8fb"
+                "reference": "5414d710ba09c0281d659657d756b7531bd9b34d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/RebelCode/time-abstract/zipball/808681d1620e15170ba05c912096a236719fe8fb",
-                "reference": "808681d1620e15170ba05c912096a236719fe8fb",
+                "url": "https://api.github.com/repos/RebelCode/time-abstract/zipball/5414d710ba09c0281d659657d756b7531bd9b34d",
+                "reference": "5414d710ba09c0281d659657d756b7531bd9b34d",
                 "shasum": ""
             },
             "require": {
@@ -28,9 +28,9 @@
                 "dhii/exception-interface": "^0.1",
                 "dhii/php-cs-fixer-config": "^0.1",
                 "dhii/stringable-interface": "^0.1",
+                "dhii/time-interface": "dev-develop",
                 "phpunit/phpunit": "^4.8",
-                "ptrofimov/xpmock": "^1.1",
-                "rebelcode/time-interface": "dev-task/initial-interfaces"
+                "ptrofimov/xpmock": "^1.1"
             },
             "type": "library",
             "autoload": {
@@ -49,7 +49,7 @@
                 }
             ],
             "description": "Abstract functionality for dealing with time.",
-            "time": "2017-10-04 12:11:21"
+            "time": "2017-10-11 14:17:42"
         }
     ],
     "packages-dev": [
@@ -193,6 +193,48 @@
             ],
             "description": "Interoperability interface for objects that can be cast to string",
             "time": "2017-01-23T15:08:20+00:00"
+        },
+        {
+            "name": "dhii/time-interface",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Dhii/time-interface.git",
+                "reference": "7ecdf1092a53b69cd9419c62287657485c66af4a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Dhii/time-interface/zipball/7ecdf1092a53b69cd9419c62287657485c66af4a",
+                "reference": "7ecdf1092a53b69cd9419c62287657485c66af4a",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.3 | ^7.0"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "<=0.3.2",
+                "dhii/php-cs-fixer-config": "dev-php-5.3",
+                "phpunit/phpunit": "^4.8",
+                "ptrofimov/xpmock": "^1.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Dhii\\Time\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Dhii Team",
+                    "email": "development@dhii.co"
+                }
+            ],
+            "description": "Interfaces for dealing with time.",
+            "time": "2017-10-11T13:29:39+00:00"
         },
         {
             "name": "doctrine/instantiator",
@@ -976,17 +1018,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/RebelCode/booking-interface.git",
-                "reference": "fcc955b5169d5cc20fa1e35b25202a85cec3a61e"
+                "reference": "668bbb725f66192aa500fc97c3c4de29c165225b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/RebelCode/booking-interface/zipball/fcc955b5169d5cc20fa1e35b25202a85cec3a61e",
-                "reference": "fcc955b5169d5cc20fa1e35b25202a85cec3a61e",
+                "url": "https://api.github.com/repos/RebelCode/booking-interface/zipball/668bbb725f66192aa500fc97c3c4de29c165225b",
+                "reference": "668bbb725f66192aa500fc97c3c4de29c165225b",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.3 | ^7.0",
-                "rebelcode/time-interface": "dev-task/initial-interfaces"
+                "dhii/time-interface": "dev-develop",
+                "php": "^5.3 | ^7.0"
             },
             "require-dev": {
                 "codeclimate/php-test-reporter": "<=0.3.2",
@@ -1012,49 +1054,7 @@
                 }
             ],
             "description": "Interfaces for bookings.",
-            "time": "2017-10-04T08:44:13+00:00"
-        },
-        {
-            "name": "rebelcode/time-interface",
-            "version": "dev-task/initial-interfaces",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/RebelCode/time-interface.git",
-                "reference": "aa69396ba0b75f72a0951e294957999496edf1e8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/RebelCode/time-interface/zipball/aa69396ba0b75f72a0951e294957999496edf1e8",
-                "reference": "aa69396ba0b75f72a0951e294957999496edf1e8",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^5.3 | ^7.0"
-            },
-            "require-dev": {
-                "codeclimate/php-test-reporter": "<=0.3.2",
-                "dhii/php-cs-fixer-config": "dev-php-5.3",
-                "phpunit/phpunit": "^4.8",
-                "ptrofimov/xpmock": "^1.1"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "RebelCode\\Time\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-3.0"
-            ],
-            "authors": [
-                {
-                    "name": "RebelCode",
-                    "email": "dev@rebelcode.com"
-                }
-            ],
-            "description": "Interfaces for dealing with time.",
-            "time": "2017-10-03T11:05:32+00:00"
+            "time": "2017-10-11T14:35:59+00:00"
         },
         {
             "name": "satooshi/php-coveralls",
@@ -2029,7 +2029,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "rebelcode/time-abstract": 20,
-        "rebelcode/time-interface": 20,
+        "dhii/time-interface": 20,
         "rebelcode/booking-interface": 20
     },
     "prefer-stable": true,

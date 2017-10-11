@@ -21,7 +21,7 @@
         "dhii/php-cs-fixer-config": "^0.1",
         "codeclimate/php-test-reporter": "<=0.3.2",
         "dhii/stringable-interface": "^0.1",
-        "rebelcode/time-interface": "dev-task/initial-interfaces",
+        "dhii/time-interface": "dev-develop",
         "rebelcode/booking-interface": "dev-task/initial-interfaces"
     },
     "autoload": {
