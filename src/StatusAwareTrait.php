@@ -18,7 +18,7 @@ trait StatusAwareTrait
      *
      * @since [*next-version*]
      *
-     * @var string|Stringable
+     * @var string|Stringable|null
      */
     protected $status;
 
@@ -27,7 +27,7 @@ trait StatusAwareTrait
      *
      * @since [*next-version*]
      *
-     * @return string|Stringable The status.
+     * @return string|Stringable|null The status.
      */
     protected function _getStatus()
     {
