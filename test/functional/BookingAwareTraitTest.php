@@ -55,6 +55,7 @@ class BookingAwareTraitTest extends TestCase
     public function createBooking()
     {
         $mock = $this->mock('RebelCode\Bookings\BookingInterface')
+                     ->getId()
                      ->getStart()
                      ->getEnd()
                      ->getDuration()
