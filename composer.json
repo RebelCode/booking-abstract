@@ -28,6 +28,12 @@
             "RebelCode\\Bookings\\": "src"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "RebelCode\\Bookings\\UnitTest\\": "test/unit",
+            "RebelCode\\Bookings\\FuncTest\\": "test/functional"
+        }
+    },
     "scripts": {
         "test": "phpunit",
         "csfix": "php-cs-fixer fix -vvv"
