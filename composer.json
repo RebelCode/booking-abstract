@@ -21,7 +21,7 @@
         "codeclimate/php-test-reporter": "<=0.3.2",
         "dhii/stringable-interface": "^0.1",
         "dhii/time-interface": "^0.1-alpha1",
-        "rebelcode/booking-interface": "^0.1-alpha1"
+        "rebelcode/booking-interface": "^0.1-alpha1 | ^0.2-alpha1"
     },
     "autoload": {
         "psr-4": {
