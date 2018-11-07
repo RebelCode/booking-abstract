@@ -59,7 +59,7 @@ class BookingAwareTraitTest extends TestCase
                      ->getStart()
                      ->getEnd()
                      ->getDuration()
-                     ->getStatus();
+                     ->getResourceIds();
 
         return $mock->new();
     }
