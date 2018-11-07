@@ -10,14 +10,14 @@ use Traversable;
 /**
  * Common functionality for objects that are aware of resource IDs.
  *
- * @since [*next-version*]
+ * @since 0.1
  */
 trait ResourceIdsAwareTrait
 {
     /**
      * The resource IDs.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @var int[]|string[]|Stringable[]|stdClass|Traversable
      */
@@ -26,7 +26,7 @@ trait ResourceIdsAwareTrait
     /**
      * Retrieves the resource IDs associated with this intance.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @return int[]|string[]|Stringable[]|stdClass|Traversable The list of resource IDs.
      */
@@ -38,7 +38,7 @@ trait ResourceIdsAwareTrait
     /**
      * Sets the resource IDs for this instance.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @param int[]|string[]|Stringable[]|stdClass|Traversable $ids The resource IDs to set.
      *
@@ -54,7 +54,7 @@ trait ResourceIdsAwareTrait
      *
      * Makes sure that the return value can be iterated over.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @param mixed $iterable The iterable to normalize.
      *

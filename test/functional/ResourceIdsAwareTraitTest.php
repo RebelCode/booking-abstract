@@ -10,21 +10,21 @@ use RebelCode\Bookings\ResourceIdsAwareTrait as TestSubject;
 /**
  * Tests {@see TestSubject}.
  *
- * @since [*next-version*]
+ * @since 0.1
  */
 class ResourceIdsAwareTraitTest extends TestCase
 {
     /**
      * The class name of the test subject.
      *
-     * @since [*next-version*]
+     * @since 0.1
      */
     const TEST_SUBJECT_CLASSNAME = 'RebelCode\Bookings\ResourceIdsAwareTrait';
 
     /**
      * Creates a new instance of the test subject.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @return MockObject
      */
@@ -41,7 +41,7 @@ class ResourceIdsAwareTraitTest extends TestCase
     /**
      * Tests whether a valid instance of the test subject can be created.
      *
-     * @since [*next-version*]
+     * @since 0.1
      */
     public function testCanBeCreated()
     {
@@ -57,7 +57,7 @@ class ResourceIdsAwareTraitTest extends TestCase
     /**
      * Tests the getter and setter methods to ensure correct assignment and retrieval.
      *
-     * @since [*next-version*]
+     * @since 0.1
      */
     public function testGetSetResourceIds()
     {
@@ -79,7 +79,7 @@ class ResourceIdsAwareTraitTest extends TestCase
     /**
      * Tests the getter and setter methods with an invalid value to assert whether an exception is thrown.
      *
-     * @since [*next-version*]
+     * @since 0.1
      */
     public function testGetSetResourceIdsInvalid()
     {

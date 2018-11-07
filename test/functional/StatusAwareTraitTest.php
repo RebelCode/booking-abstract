@@ -10,21 +10,21 @@ use Xpmock\TestCase;
 /**
  * Tests {@see RebelCode\Bookings\StatusAwareTrait}.
  *
- * @since [*next-version*]
+ * @since 0.1
  */
 class StatusAwareTraitTest extends TestCase
 {
     /**
      * The class name of the test subject.
      *
-     * @since [*next-version*]
+     * @since 0.1
      */
     const TEST_SUBJECT_CLASSNAME = 'RebelCode\Bookings\StatusAwareTrait';
 
     /**
      * Creates a new instance of the test subject.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @return PHPUnit_Framework_MockObject_MockObject
      */
@@ -53,7 +53,7 @@ class StatusAwareTraitTest extends TestCase
     /**
      * Tests whether a valid instance of the test subject can be created.
      *
-     * @since [*next-version*]
+     * @since 0.1
      */
     public function testCanBeCreated()
     {
@@ -69,7 +69,7 @@ class StatusAwareTraitTest extends TestCase
     /**
      * Tests the status getter and setter methods to ensure correct value assignment and retrieval.
      *
-     * @since [*next-version*]
+     * @since 0.1
      */
     public function testGetSetStatus()
     {
@@ -86,7 +86,7 @@ class StatusAwareTraitTest extends TestCase
     /**
      * Tests the status getter and setter methods with as stringable object.
      *
-     * @since [*next-version*]
+     * @since 0.1
      */
     public function testGetSetStatusStringable()
     {
@@ -105,7 +105,7 @@ class StatusAwareTraitTest extends TestCase
     /**
      * Tests the status getter and setter methods with an invalid value.
      *
-     * @since [*next-version*]
+     * @since 0.1
      */
     public function testGetSetStatusInvalid()
     {

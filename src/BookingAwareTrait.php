@@ -9,14 +9,14 @@ use InvalidArgumentException;
 /**
  * Common functionality for objects that are aware of a booking.
  *
- * @since [*next-version*]
+ * @since 0.1
  */
 trait BookingAwareTrait
 {
     /**
      * The booking instance.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @var BookingInterface|null
      */
@@ -25,7 +25,7 @@ trait BookingAwareTrait
     /**
      * Retrieves the booking instance associated with this instance.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @return BookingInterface|null The booking instance, if any.
      */
@@ -37,7 +37,7 @@ trait BookingAwareTrait
     /**
      * Sets the booking instance for this instance.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @param BookingInterface|null $booking The booking instance, or null.
      */
@@ -58,7 +58,7 @@ trait BookingAwareTrait
     /**
      * Creates a new invalid argument exception.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @param string|Stringable|null $message  The error message, if any.
      * @param int|null               $code     The error code, if any.
@@ -77,7 +77,7 @@ trait BookingAwareTrait
     /**
      * Translates a string, and replaces placeholders.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @param string $string  The format string to translate.
      * @param array  $args    Placeholder values to replace in the string.

@@ -10,21 +10,21 @@ use Xpmock\TestCase;
 /**
  * Tests {@see TestSubject}.
  *
- * @since [*next-version*]
+ * @since 0.1
  */
 class BookingAwareTraitTest extends TestCase
 {
     /**
      * The class name of the test subject.
      *
-     * @since [*next-version*]
+     * @since 0.1
      */
     const TEST_SUBJECT_CLASSNAME = 'RebelCode\Bookings\BookingAwareTrait';
 
     /**
      * Creates a new instance of the test subject.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @return PHPUnit_Framework_MockObject_MockObject The created mock instance.
      */
@@ -48,7 +48,7 @@ class BookingAwareTraitTest extends TestCase
     /**
      * Creates a mock booking instance for testing purposes.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @return BookingInterface The created booking.
      */
@@ -67,7 +67,7 @@ class BookingAwareTraitTest extends TestCase
     /**
      * Tests whether a valid instance of the test subject can be created.
      *
-     * @since [*next-version*]
+     * @since 0.1
      */
     public function testCanBeCreated()
     {
@@ -83,7 +83,7 @@ class BookingAwareTraitTest extends TestCase
     /**
      * Tests the booking getter and setter methods to ensure correct assignment and retrieval.
      *
-     * @since [*next-version*]
+     * @since 0.1
      */
     public function testGetSetBooking()
     {
@@ -98,7 +98,7 @@ class BookingAwareTraitTest extends TestCase
     /**
      * Tests the booking getter and setter methods with a null value to ensure correct assignment and retrieval.
      *
-     * @since [*next-version*]
+     * @since 0.1
      */
     public function testGetSetBookingNull()
     {
@@ -113,7 +113,7 @@ class BookingAwareTraitTest extends TestCase
     /**
      * Tests the booking setter method with an invalid value to assert whether an exception is thrown.
      *
-     * @since [*next-version*]
+     * @since 0.1
      */
     public function testGetSetBookingInvalid()
     {

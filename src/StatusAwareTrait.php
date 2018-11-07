@@ -9,14 +9,14 @@ use InvalidArgumentException;
 /**
  * Common functionality for something that is aware of a status.
  *
- * @since [*next-version*]
+ * @since 0.1
  */
 trait StatusAwareTrait
 {
     /**
      * The status.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @var string|Stringable|null
      */
@@ -25,7 +25,7 @@ trait StatusAwareTrait
     /**
      * Retrieves the status associated with this instance.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @return string|Stringable|null The status.
      */
@@ -37,7 +37,7 @@ trait StatusAwareTrait
     /**
      * Sets the status for this instance.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @param string|Stringable|null $status The status to set.
      */
@@ -58,7 +58,7 @@ trait StatusAwareTrait
     /**
      * Creates a new invalid argument exception.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @param string|Stringable|null $message  The error message, if any.
      * @param int|null               $code     The error code, if any.
@@ -77,7 +77,7 @@ trait StatusAwareTrait
     /**
      * Translates a string, and replaces placeholders.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @param string $string  The format string to translate.
      * @param array  $args    Placeholder values to replace in the string.
