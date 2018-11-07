@@ -20,8 +20,7 @@
         "dhii/php-cs-fixer-config": "^0.1",
         "codeclimate/php-test-reporter": "<=0.3.2",
         "dhii/stringable-interface": "^0.1",
-        "dhii/time-interface": "^0.1-alpha1",
-        "rebelcode/booking-interface": "^0.1-alpha1"
+        "rebelcode/booking-interface": "^0.2"
     },
     "autoload": {
         "psr-4": {
