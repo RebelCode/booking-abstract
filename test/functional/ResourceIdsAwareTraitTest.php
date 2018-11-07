@@ -32,7 +32,7 @@ class ResourceIdsAwareTraitTest extends TestCase
     {
         // Create mock
         $mock = $this->getMockBuilder(static::TEST_SUBJECT_CLASSNAME)
-                     ->setMethods(['_normalizeArray'])
+                     ->setMethods(['_normalizeIterable'])
                      ->getMockForTrait();
 
         return $mock;
@@ -67,7 +67,7 @@ class ResourceIdsAwareTraitTest extends TestCase
 
         $normalized = [uniqid('id-'), uniqid('id-')];
         $subject->expects($this->once())
-                ->method('_normalizeArray')
+                ->method('_normalizeIterable')
                 ->with($input)
                 ->willReturn($normalized);
 
@@ -88,7 +88,7 @@ class ResourceIdsAwareTraitTest extends TestCase
         $input   = uniqid('invalid-');
 
         $subject->expects($this->once())
-                ->method('_normalizeArray')
+                ->method('_normalizeIterable')
                 ->with($input)
                 ->willThrowException(new InvalidArgumentException());
 

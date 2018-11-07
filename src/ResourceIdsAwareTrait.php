@@ -19,7 +19,7 @@ trait ResourceIdsAwareTrait
      *
      * @since [*next-version*]
      *
-     * @var int[]|string[]|Stringable[]
+     * @var int[]|string[]|Stringable[]|stdClass|Traversable
      */
     protected $resourceIds;
 
@@ -28,7 +28,7 @@ trait ResourceIdsAwareTrait
      *
      * @since [*next-version*]
      *
-     * @return int[]|string[]|Stringable[] The list of resource IDs.
+     * @return int[]|string[]|Stringable[]|stdClass|Traversable The list of resource IDs.
      */
     protected function _getResourceIds()
     {
@@ -40,25 +40,27 @@ trait ResourceIdsAwareTrait
      *
      * @since [*next-version*]
      *
-     * @param int[]|string[]|Stringable[] $ids The resource IDs to set.
+     * @param int[]|string[]|Stringable[]|stdClass|Traversable $ids The resource IDs to set.
      *
      * @throws InvalidArgumentException If the argument is not valid.
      */
     protected function _setResourceIds($ids)
     {
-        $this->resourceIds = $this->_normalizeArray($ids);
+        $this->resourceIds = $this->_normalizeIterable($ids);
     }
 
     /**
-     * Normalizes a value into an array.
+     * Normalizes an iterable.
+     *
+     * Makes sure that the return value can be iterated over.
      *
      * @since [*next-version*]
      *
-     * @param array|stdClass|Traversable $value The value to normalize.
+     * @param mixed $iterable The iterable to normalize.
      *
-     * @throws InvalidArgumentException If value cannot be normalized.
+     * @throws InvalidArgumentException If the iterable could not be normalized.
      *
-     * @return array The normalized value.
+     * @return array|Traversable|stdClass The normalized iterable.
      */
-    abstract protected function _normalizeArray($value);
+    abstract protected function _normalizeIterable($iterable);
 }
